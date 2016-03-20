@@ -18,6 +18,14 @@ export function fetchWeather(city) {
 export const REMOVE_CITY = 'REMOVE_CITY';
 
 export function removeCity(cityName) {
+  var savedCities = JSON.parse(localStorage.getItem('weatherReactCities'));
+  var afterDelete = savedCities.filter((currElement) => {
+    if(currElement !== cityName.toLowerCase()) {
+      return currElement;
+    }
+  });
+  console.log('afterDelete', afterDelete);
+  localStorage.setItem('weatherReactCities', JSON.stringify(afterDelete));
   return {
     type: REMOVE_CITY,
     payload: cityName
