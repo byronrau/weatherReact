@@ -4,21 +4,21 @@
 }
 .today {
   /*color:red;*/
-  font-size: 20px;
+  font-size: 1.25em;
   text-align: center;
   margin: 0 auto;
 }
 .today i {
-  font-size: 60px;
+  font-size: 3.75em;
 }
 .forecast {
   text-align: center;
   margin: 0 auto;
   width: 100%;
-  font-size: 12px;
+  font-size: 1em;
 }
 .forecast i {
-  font-size: 30px;
+  font-size: 1.875;
 }
 .forecast table {
   text-align: center;
@@ -28,4 +28,23 @@
 form {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+/* Styles */
+  .today {
+    /*color:red;*/
+    font-size: 1.5em;
+  }
+  .today i {
+    font-size: 4em;
+  }
+  .forecast {
+    font-size: 1em;
+  }
+  .forecast i {
+    font-size: 2em;
+  }
 }

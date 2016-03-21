@@ -12,7 +12,6 @@ class SearchBar extends Component {
     this.onFormSubmit = this.onFormSubmit.bind(this);
   }
   getInitCities(){
-    // console.log(JSON.parse(localStorage.getItem('weatherReactCities')));
     var savedCities = JSON.parse(localStorage.getItem('weatherReactCities'));
     if(savedCities !== null) {
       this.setState({initCities: savedCities})
