@@ -16,14 +16,14 @@ class SearchBar extends Component {
     var savedCities = JSON.parse(localStorage.getItem('weatherReactCities'));
     if(savedCities !== null) {
       this.setState({initCities: savedCities})
+      savedCities.forEach((city, index)=>{
+        ((city) => {
+          setTimeout(function(){
+            this.props.fetchWeather(city)
+          }.bind(this), index*300);
+        })(city);
+      })
     }
-    savedCities.forEach((city, index)=>{
-      ((city) => {
-        setTimeout(function(){
-          this.props.fetchWeather(city)
-        }.bind(this), index*300);
-      })(city);
-    })
   }
 
   componentDidMount() {
