@@ -11,25 +11,25 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
-    "axios": "^0.9.1",
-    "babel-preset-stage-1": "^6.1.18",
-    "express": "^4.13.4",
-    "lodash": "^3.10.1",
-    "moment": "^2.12.0",
-    "react": "^0.14.3",
-    "react-dom": "^0.14.3",
-    "react-redux": "^4.0.0",
-    "redux": "^3.0.4",
-    "redux-promise": "^0.5.1",
-    "weather-icons": "^1.3.2",
-    "webpack": "^1.12.14",
-    "babel-core": "^6.2.1",
-    "babel-loader": "^6.2.0",
+    "axios": "^0.20.0",
+    "babel-core": "^6.26.3",
+    "babel-loader": "^8.1.0",
     "babel-preset-es2015": "^6.1.18",
-    "babel-preset-react": "^6.1.18",
-    "webpack-dev-server": "^1.14.0"
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-1": "^6.24.1",
+    "express": "^4.17.1",
+    "lodash": "^4.17.20",
+    "moment": "^2.29.0",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-redux": "^7.2.1",
+    "redux": "^4.0.5",
+    "redux-promise": "^0.6.0",
+    "weather-icons": "^1.3.2",
+    "webpack": "^4.44.2",
+    "webpack-dev-server": "^3.11.0"
   }
 }
